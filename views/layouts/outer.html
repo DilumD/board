@@ -2,12 +2,12 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Spacedeck Open – {% block title %}{% endblock %}</title>
+    <title> {% block title %}{% endblock %}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <link href="[[ '/images/favicon.png' | cdn ]]" rel="icon" type="image/x-icon" />
+    <link href="[[ 'http://cloudsmartschool.com/wp-content/uploads/2019/08/cropped-css_logo.png' | cdn ]]" rel="icon" type="image/x-icon" />
 
     <link rel="stylesheet" href="[[ '/stylesheets/style.css' | cdn ]]">
     <script> var csrf_token = '[[ csrf_token ]]'; </script>
@@ -18,7 +18,7 @@
   <body>
     <header id="landing-header" class="header">
       <div class="header-left">
-        <a class="btn btn-transparent btn-nude" href="[[config.endpoint]]/"><img src="[[ '/images/sd6-logo-black.svg' | cdn ]]" width="190"></a>
+        <a class="btn btn-transparent btn-nude" href="[[config.endpoint]]/"><img src="[[ 'http://cloudsmartschool.com/wp-content/uploads/2019/08/cropped-css_logo.png' | cdn ]]" width="190"></a>
       </div>
 
       <div class="header-right pull-right">
@@ -35,16 +35,5 @@
 
     {% block content %}{% endblock %}
 
-    <div class="footer">
-      <p>
-        <div class="col-xs-6">
-          &copy; 2020 <a href="https://mntre.com">MNT Research GmbH</a>, Fehlerstr. 8, 12161 Berlin, Germany<br>
-          &copy; 2011–2019 Spacedeck GmbH (in liquidation)<br>
-          Source Code: <a href="https://github.com/mntmn/spacedeck-open">https://github.com/mntmn/spacedeck-open</a>
-          <br>
-          Font: <a href="https://rsms.me/inter/">Inter by rsms</a>
-        </div>
-      </p>
-    </div>
   </body>
 </html>
